@@ -1,0 +1,52 @@
+body {
+    font-family: Verdana;
+    background-color: rgba(80, 79, 79, 0.24);
+}
+
+h1 {
+    color: rgb(156, 8, 84);
+    text-align: center;
+    padding: 30px;
+}
+
+p {
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+#tablaIMC {
+    width: 65%;
+    margin: 0 auto;
+    border-radius: 20%;
+}
+
+#ingresarPeso,
+#ingresarEstatura {
+    color: rgb(10, 0, 99);
+    
+}
+
+#peso,
+#estatura {
+    border-radius: 10px;
+    color: blueviolet;
+}
+
+#button {
+    width: 170px;
+    border-radius:30px;
+    background-color: blueviolet;
+    color: white;
+}

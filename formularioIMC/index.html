@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Calcular IMC</title>
+</head>
+
+<body>
+    <h1>ÍNDICE DE MASA CORPORAL</h1>
+
+    <p>En este sitio web podrás calcular tu índice de masa corporal (IMC), solo debes ingresar tu peso en kilogramos, tu
+        estatura en metros y dar clic en el botón "Calcular IMC".</p>
+
+    <div class="grid-container">
+        <img src="img/img.png" alt="tablaIMC" id="tablaIMC">
+
+        <form>
+            <ul>
+                <label for="peso" id="ingresarPeso">Ingrese su peso (kg) :</label> <br>
+                <input type="number" id="peso" nombre="peso del usuario" step="any" min="0" placeholder="Peso" />
+
+            </ul>
+            <ul>
+                <label for="estatura" id="ingresarEstatura">Ingrese su estatura (m) :</label> <br>
+                <input type="number" id="estatura" nombre="estatura del usuario" step="any" min="0"
+                    placeholder="Estatura" />
+
+            </ul>
+            <ul class="button">
+                <button onclick="calcularIMC()" type="submit" id="button">Calcular IMC</button>
+            </ul>
+        </form>
+        
+    </div>
+        <p>Una vez calculado, puedes verificar la tabla y saber el estado en que te encuentras.</p>
+
+</body>
+
+</html>
