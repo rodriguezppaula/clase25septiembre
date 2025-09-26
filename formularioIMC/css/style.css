@@ -1,6 +1,7 @@
 body {
     font-family: Verdana;
     background-color: rgba(80, 79, 79, 0.24);
+    font-size: larger;
 }
 
 h1 {
@@ -13,9 +14,13 @@ p {
     padding-top: 1%;
     padding-left: 2%;
     padding-right: 2%;
-    font-style: italic;
+    text-align: initial;
+}
+
+.pFinal {
     text-align: center;
-    
+    font-style: italic;
+    font-size: small;
 }
 
 .grid-container {
@@ -23,19 +28,14 @@ p {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     grid-template-rows: auto;
-    align-items: center;
-}
-
-#tablaIMC {
-    width: 65%;
-    margin: 0 auto;
-    border-radius: 20%;
+    text-align: right;
+    justify-content: center;
 }
 
 #ingresarPeso,
 #ingresarEstatura {
     color: rgb(10, 0, 99);
-    
+    font-weight: bold;
 }
 
 #peso,
@@ -46,7 +46,39 @@ p {
 
 #button {
     width: 170px;
-    border-radius:30px;
+    border-radius: 30px;
     background-color: blueviolet;
     color: white;
+    font-size: large;
+}
+
+#button:hover,
+#tablaIMC:hover {
+    transform: scale(1.05);
+}
+
+
+/* Estilo base (para móviles - Mobile First) */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    /* Una columna */
+    gap: 10px;
+}
+
+/* Para tablets (mínimo 600px de ancho) */
+@media (min-width: 600px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* 2 columnas */
+    }
+}
+
+/* Para PC (mínimo 1024px de ancho) */
+@media (min-width: 1024px) {
+    .contenedor {
+        grid-template-columns: 1fr 1fr 1fr;
+        /* 3 columnas */
+    }
 }

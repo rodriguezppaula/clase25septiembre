@@ -15,16 +15,15 @@
         estatura en metros y dar clic en el botón "Calcular IMC".</p>
 
     <div class="grid-container">
-        <img src="img/img.png" alt="tablaIMC" id="tablaIMC">
 
         <form>
             <ul>
-                <label for="peso" id="ingresarPeso">Ingrese su peso (kg) :</label> <br>
+                <label for="peso" id="ingresarPeso">Ingrese su peso (kg) :</label> <br> <br>
                 <input type="number" id="peso" nombre="peso del usuario" step="any" min="0" placeholder="Peso" />
 
             </ul>
             <ul>
-                <label for="estatura" id="ingresarEstatura">Ingrese su estatura (m) :</label> <br>
+                <label for="estatura" id="ingresarEstatura">Ingrese su estatura (m) :</label> <br> <br>
                 <input type="number" id="estatura" nombre="estatura del usuario" step="any" min="0"
                     placeholder="Estatura" />
 
@@ -33,9 +32,11 @@
                 <button onclick="calcularIMC()" type="submit" id="button">Calcular IMC</button>
             </ul>
         </form>
-        
+
+        <img src="img/IMC-bmi.png" alt="tablaIMC" id="tablaIMC">
+
     </div>
-        <p>Una vez calculado, puedes verificar la tabla y saber el estado en que te encuentras.</p>
+    <p class="pFinal">Una vez calculado, puedes verificar la tabla y saber el estado en que te encuentras.</p>
 
 </body>
 
